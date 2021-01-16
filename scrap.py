@@ -4,7 +4,7 @@ url = 'https://www.hackthebox.eu/api/invite/generate'
 codes = []
 user_agent = {'User-agent': 'Mozilla/5.0'}
 
-for i in range(1, time):
+for i in range(0, time):
 	r = requests.post(url, headers=user_agent)
 	r = r.json()
 	data = r['data']
